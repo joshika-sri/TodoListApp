@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 body {
-    background: linear-gradient(135deg, #f8bbd0 0%, #fce4ec 100%);
+    background: linear-gradient(135deg, #f386ac 0%, #c75d80 100%);
     min-height: 100vh;
     margin: 0;
     font-family: 'Quicksand', Arial, sans-serif;
@@ -280,12 +280,12 @@ ul {
     width: 32px;
     height: 32px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.10);
+    box-shadow: 0 2px 8px rgba(216, 71, 143, 0.1);
     transition: background 0.2s;
 }
 
 .add-subtask-row button:hover {
-    background: linear-gradient(135deg, #f06292 0%, #f8bbd0 100%);
+    background: linear-gradient(135deg, #ce1552 0%, #f8bbd0 100%);
 }
 
 @media (max-width: 700px) {
@@ -293,7 +293,7 @@ ul {
         padding: 10px 2px;
         max-width: 96vw;
         margin: 10px 0;
-        border: 2px solid #f8bbd0;
+        border: 18px solid #e690ae;
     }
     .header {
         flex-direction: column;
