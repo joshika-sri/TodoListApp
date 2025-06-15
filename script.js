@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             userHeader.style.display = 'none';
             editNameBtn.style.display = 'none';
             usernameInput.style.display = '';
+            usernameInput.value = '';
             usernameInput.focus();
         }
     }
@@ -33,8 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         showUsername();
     }
 
+    // Save on Enter or when input loses focus
     usernameInput.addEventListener('keydown', e => {
         if (e.key === 'Enter' && usernameInput.value.trim()) {
+            saveUsername(usernameInput.value);
+        }
+    });
+    usernameInput.addEventListener('blur', () => {
+        if (usernameInput.value.trim()) {
             saveUsername(usernameInput.value);
         }
     });
